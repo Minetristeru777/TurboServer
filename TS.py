@@ -24,7 +24,7 @@ async def handler(websocket):
 
 async def main():
     async with websockets.serve(handler, "0.0.0.0", 8765):
-        print("TurboServer running on ws://localhost:8765")
+        print("TurboServer running on ws://localhost:8000")
         await asyncio.Future()  # безкінечний цикл
 
 if __name__ == "__main__":
